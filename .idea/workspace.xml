@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7898b2e2-cf0f-41d4-b636-c8dc7da93a21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blueprint.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CustomNavbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/About.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomNavbar/CustomNavbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +45,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/CustomNavbar" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
@@ -94,18 +89,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580352279624</updated>
-      <workItem from="1580352281232" duration="3593000" />
+      <workItem from="1580352281232" duration="3717000" />
     </task>
+    <task id="LOCAL-00001" summary="Set up some routing">
+      <created>1580357272925</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580357272925</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up some routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up some routing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="446" key="#build" timestamp="1580352412750">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="987" y="446" key="#build/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580352412750" />
+    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580357272803">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357272803" />
     <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580357240118">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import Home from "./pages/Home";
-import CustomNavbar from "./components/CustomNavbar";
+import CustomNavbar from "./components/CustomNavbar/CustomNavbar";
 import About from "./pages/About";
 
 import './App.css';
