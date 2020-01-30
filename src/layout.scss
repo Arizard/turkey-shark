@@ -1,0 +1,21 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.inner-container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.outer-container {
+  margin-bottom: 24px;
+}
+
+.navbar-container {
+  margin: 16px;
+}
+
+body {
+  background-color: $light-gray5;
+}
