@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7898b2e2-cf0f-41d4-b636-c8dc7da93a21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/SampleWideBlock/SampleWideBlock.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SampleWideBlock/SampleWideBlock.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/AuthService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/FirebaseAuthService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomNavbar/CustomNavbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomNavbar/CustomNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomNavbar/CustomNavbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +21,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
         <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -89,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580352279624</updated>
-      <workItem from="1580352281232" duration="3717000" />
+      <workItem from="1580352281232" duration="9385000" />
     </task>
     <task id="LOCAL-00001" summary="Set up some routing">
       <created>1580357272925</created>
@@ -98,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580357272925</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="move CustomNavbar.tsx">
+      <created>1580357364076</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580357364076</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,44 +132,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set up some routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up some routing" />
+    <MESSAGE value="move CustomNavbar.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="move CustomNavbar.tsx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="987" y="446" key="#build" timestamp="1580352412750">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="987" y="446" key="#build/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580352412750" />
-    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580357272803">
+    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580357363949">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357272803" />
-    <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580357240118">
+    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357363949" />
+    <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580363740779">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357240118" />
-    <state width="2539" height="423" key="GridCell.Tab.0.center" timestamp="1580357240116">
+    <state width="2539" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580363740779" />
+    <state width="2539" height="423" key="GridCell.Tab.0.center" timestamp="1580363740776">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357240116" />
-    <state width="2539" height="423" key="GridCell.Tab.0.left" timestamp="1580357240115">
+    <state width="2539" height="423" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580363740776" />
+    <state width="2539" height="423" key="GridCell.Tab.0.left" timestamp="1580363740775">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357240115" />
-    <state width="2539" height="423" key="GridCell.Tab.0.right" timestamp="1580357240117">
+    <state width="2539" height="423" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580363740775" />
+    <state width="2539" height="423" key="GridCell.Tab.0.right" timestamp="1580363740777">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357240117" />
+    <state width="2539" height="423" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580363740777" />
     <state x="789" y="359" key="SettingsEditor" timestamp="1580354330204">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="789" y="359" key="SettingsEditor/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580354330204" />
-    <state x="945" y="345" key="run.anything.popup" timestamp="1580353884642">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="945" y="345" key="run.anything.popup/0.23.2560.1417/-1680.413.1680.1027@0.23.2560.1417" timestamp="1580353884642" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1580357224826">
+    <state x="945" y="291" key="run.anything.popup" timestamp="1580362000464">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580357224826" />
+    <state x="945" y="291" key="run.anything.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580362000464" />
+    <state x="945" y="291" key="run.anything.popup/0.23.2560.1417/-1680.413.1680.1027@0.23.2560.1417" timestamp="1580361055267" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1580363602613">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580363602613" />
   </component>
 </project>

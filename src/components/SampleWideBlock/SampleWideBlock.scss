@@ -1,0 +1,7 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.wider-content {
+  margin-left: -$pt-grid-size*3;
+  margin-right: -$pt-grid-size*3;
+  margin-bottom: $pt-grid-size;
+}

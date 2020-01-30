@@ -8,7 +8,22 @@ import {
     NavbarHeading,
 } from '@blueprintjs/core';
 
-const CustomNavbar = () => {
+interface CustomNavbarProps {appGlobal: any}
+
+const CustomNavbar = (props: CustomNavbarProps) => {
+
+    const isAuthed = props.appGlobal.isAuthed();
+    const LoginButton = () => {
+        if (isAuthed) {
+            return (<span></span>);
+        }
+        return (<AnchorButton
+            href='/login'
+            className={Classes.MINIMAL}
+            icon='user'
+            text='Log In'/>);
+    };
+
     return (
         <Navbar>
             <NavbarGroup align={Alignment.LEFT}>
@@ -24,8 +39,11 @@ const CustomNavbar = () => {
                     icon='info-sign'
                     text='About'/>
             </NavbarGroup>
+            <NavbarGroup align={Alignment.RIGHT}>
+                <LoginButton/>
+            </NavbarGroup>
         </Navbar>
     );
-}
+};
 
 export default CustomNavbar;

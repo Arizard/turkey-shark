@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import SampleWideBlock from '../components/SampleWideBlock/SampleWideBlock'
 import {H1, H2} from '@blueprintjs/core';
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
                 days on end, until one of them fell to the ground from boredom
                 or exhaustion. Over the next few years the new sport developed a
                 respectable following of a few hundred local socialites.</p>
-
+            <SampleWideBlock></SampleWideBlock>
             <p>Ironically, it was Felipe's son, Andre Felipe Felipe, who
                 developed what he called the “Punching” strategy, in 1637, after
                 seeing a schoolboy strike another in anger, causing him to fall
