@@ -1,6 +1,7 @@
 import ScriptDocument from "../types";
 
 export default interface PersistenceService {
+
     setUser: { (token: string): void }
 
     listDocuments: { (onSuccess: any, onFail: any): void }
@@ -10,7 +11,7 @@ export default interface PersistenceService {
     getElement: { (id: string, onSuccess: any, onFail: any): void }
     putElement: { (id: string, el: object): void }
 
-    getCue: { (id: string, onSuccess: any, onFail: any): Promise<any> }
+    getCue: { (id: string, onSuccess: any, onFail: any): void }
     putCue: { (id: string, cue: object): void }
 
     getTag: { (id: string, onSuccess: any, onFail: any): void }

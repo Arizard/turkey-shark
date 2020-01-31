@@ -10,8 +10,11 @@ import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Login from "../../pages/Login";
 import {Classes} from "@blueprintjs/core";
+import TestPage from "../../pages/TestPage";
+import PersistenceService from "../../services/PersistenceService";
 
 interface OwnProps {
+    persistenceService: PersistenceService;
     authLoading: boolean;
     startAuth: any;
     authed: boolean;
@@ -43,6 +46,10 @@ const MainPresenter: FunctionComponent<Props> = (props) => {
                         </Route>
                         <Route exact path='/login'>
                             <LoginWithRedirect {...props}/>
+                        </Route>
+                        <Route exact path='/testpage'>
+                            <TestPage
+                                persistenceService={props.persistenceService}/>
                         </Route>
                     </Switch>
                 </div>
