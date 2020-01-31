@@ -4,6 +4,7 @@ import SampleWideBlock from '../components/SampleWideBlock/SampleWideBlock'
 import {H1, H2} from '@blueprintjs/core';
 
 const Home = () => {
+    document.title = 'Home'
     return (<>
             <H1>Home</H1>
             <H2>History of Boxing</H2>

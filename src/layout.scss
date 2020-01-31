@@ -14,6 +14,9 @@
 
 .navbar-container {
   margin: $pt-grid-size;
+  a {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -31,4 +34,23 @@ body {
   td {
     padding-bottom: $pt-grid-size;
   }
+}
+
+.footer-container {
+  margin: $pt-grid-size;
+  margin-top: $pt-grid-size*4;
+  text-align: center;
+}
+
+.horizontal-line-medium::before {
+  content: ' ';
+}
+
+.horizontal-line-medium {
+  border-top: 1px solid $gray1;
+  width: 100vw;
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $pt-grid-size*2;
 }

@@ -1,11 +1,29 @@
-import AuthService from "./AuthService";
+import firebase from "firebase";
 
-class FirebaseAuthService implements AuthService {
-    public authenticate(user: string, password: string): boolean {
-        return false
+class FirebaseAuthService {
+    private provider: any;
+    private authed: boolean;
+    constructor() {
+        this.provider = new firebase.auth.GoogleAuthProvider();
+        this.authed = false;
     }
-    public getAuthToken(): string {
-        return "nup"
+
+    public authenticate(): boolean {
+        firebase.auth()
+            .signInWithPopup(this.provider)
+            .then((userCredential) => {
+                console.log(userCredential);
+                this.authed = true;
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+
+        return true;
+    }
+
+    public isAuthed(): boolean {
+        return this.authed;
     }
 }
 

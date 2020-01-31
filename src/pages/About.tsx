@@ -5,6 +5,7 @@ import {
 } from '@blueprintjs/core';
 
 const About = () => {
+    document.title = 'About'
     return (<>
             <H1>About</H1>
             <H2>Lorem Ipsum</H2>

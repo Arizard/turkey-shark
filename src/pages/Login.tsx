@@ -1,36 +1,26 @@
 import * as React from 'react';
-import {Button, H1, InputGroup, Intent} from "@blueprintjs/core";
+import {Button, H1, Intent} from "@blueprintjs/core";
 import {IconNames} from "@blueprintjs/icons";
 
 interface LoginProps {
-    appGlobal: any
+    startAuth: any;
 }
 
 const Login = (props: LoginProps) => {
+    document.title = 'Log In'
     return (
         <div className='login-container'>
             <H1>Log In</H1>
             <table className='login-table'>
                 <tbody>
                 <tr>
-                    <td><InputGroup
-                        leftIcon={IconNames.USER}
-                        placeholder='Enter your username or email address...'>
-                    </InputGroup></td>
-                </tr>
-                <tr>
-                    <td><InputGroup
-                        leftIcon={IconNames.LOCK}
-                        placeholder='Enter your password...'
-                        type='password'>
-                    </InputGroup></td>
-                </tr>
-                <tr>
                     <td>
                         <Button
-                            text='Submit'
+                            icon={IconNames.LOCK}
+                            text='Log in with Google'
                             intent={Intent.PRIMARY}
                             fill={true}
+                            onClick={props.startAuth}
                             />
                     </td>
                 </tr>
