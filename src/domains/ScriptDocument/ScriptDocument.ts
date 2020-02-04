@@ -133,10 +133,10 @@ export class ScriptTag {
 }
 
 export interface ScriptDocumentRepository {
-    get: {(id: string): Promise<ScriptDocument>};
-    put: {(id: string, doc: ScriptDocument): void};
-    new: {(): Promise<string>}
-    find: {(...args: Array<any>): Promise<Array<ScriptDocument>>};
+    get(id: string): Promise<ScriptDocument>;
+    put(id: string, doc: ScriptDocument): void;
+    create(): Promise<string>;
+    find(...args: Array<any>): Promise<Array<ScriptDocument>>;
 }
 
 export class ScriptDocumentService {
@@ -149,9 +149,10 @@ export class ScriptDocumentService {
     }
 
     async newDocument(name: string): Promise<ScriptDocument> {
-        let docId = await this.repo.new();
-        let doc = await this.repo.get(docId);
+        const id = await this.repo.create();
+        const doc = await this.repo.get(id);
         doc.name = name;
+        this.repo.put(id, doc);
         return doc
     }
 }

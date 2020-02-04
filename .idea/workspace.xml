@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7898b2e2-cf0f-41d4-b636-c8dc7da93a21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/TestPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/ScriptDocument/MemoryScriptDocumentRepository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainController.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/MainController.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainPresenter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/MainPresenter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/FirebasePersistenceService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/FirebasePersistenceService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PersistenceService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/PersistenceService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,10 @@
       <list>
         <option value="CSS File" />
         <option value="SCSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="HTTP Request" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -45,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
@@ -95,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580352279624</updated>
       <workItem from="1580352281232" duration="14038000" />
-      <workItem from="1580429375362" duration="10100000" />
+      <workItem from="1580429375362" duration="16782000" />
     </task>
     <task id="LOCAL-00001" summary="Set up some routing">
       <created>1580357272925</created>
@@ -125,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580449875665</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="persistence service">
+      <created>1580453169950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580453169951</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add scriptdocument entity">
+      <created>1580711787861</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580711787861</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +166,9 @@
     <MESSAGE value="move CustomNavbar.tsx" />
     <MESSAGE value="skeleton login page and auth services with redirect." />
     <MESSAGE value="re-architecting" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-architecting" />
+    <MESSAGE value="persistence service" />
+    <MESSAGE value="add scriptdocument entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="add scriptdocument entity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="880" y="387" key="#Plugins" timestamp="1580429362000">
@@ -164,42 +183,44 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1023" y="530" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580366235381" />
-    <state x="1093" y="444" key="#com.intellij.ide.util.MemberChooser" timestamp="1580438208929">
+    <state x="1093" y="444" key="#com.intellij.ide.util.MemberChooser" timestamp="1580779449418">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1093" y="444" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580438208929" />
-    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580453159951">
+    <state x="1093" y="444" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580779449418" />
+    <state x="1093" y="460" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417/-1680.413.1680.1027@0.23.2560.1417" timestamp="1580709966687" />
+    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580711787767">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580453159951" />
-    <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580453145017">
+    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580711787767" />
+    <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580711778685">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580453145017" />
-    <state width="2539" height="423" key="GridCell.Tab.0.center" timestamp="1580453145015">
+    <state width="2539" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580711778685" />
+    <state width="2539" height="423" key="GridCell.Tab.0.center" timestamp="1580711778684">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580453145015" />
-    <state width="2539" height="423" key="GridCell.Tab.0.left" timestamp="1580453145014">
+    <state width="2539" height="423" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580711778684" />
+    <state width="2539" height="423" key="GridCell.Tab.0.left" timestamp="1580711778682">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580453145014" />
-    <state width="2539" height="423" key="GridCell.Tab.0.right" timestamp="1580453145016">
+    <state width="2539" height="423" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580711778682" />
+    <state width="2539" height="423" key="GridCell.Tab.0.right" timestamp="1580711778684">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580453145016" />
-    <state x="789" y="359" key="SettingsEditor" timestamp="1580429503439">
+    <state width="2539" height="423" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580711778684" />
+    <state x="789" y="359" key="SettingsEditor" timestamp="1580779153765">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="789" y="359" key="SettingsEditor/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580429503439" />
-    <state x="945" y="291" key="run.anything.popup" timestamp="1580428709575">
+    <state x="789" y="359" key="SettingsEditor/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580779153765" />
+    <state x="945" y="291" key="run.anything.popup" timestamp="1580772952920">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="291" key="run.anything.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580428709575" />
-    <state x="945" y="291" key="run.anything.popup/0.23.2560.1417/-1680.413.1680.1027@0.23.2560.1417" timestamp="1580427716209" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1580452207672">
+    <state x="945" y="291" key="run.anything.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580772952920" />
+    <state x="945" y="291" key="run.anything.popup/0.23.2560.1417/-1680.413.1680.1027@0.23.2560.1417" timestamp="1580710104423" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1580779443035">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580452207672" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580779443035" />
+    <state x="945" y="349" width="670" height="666" key="search.everywhere.popup/0.23.2560.1417/-1680.413.1680.1027@0.23.2560.1417" timestamp="1580709970127" />
   </component>
 </project>
