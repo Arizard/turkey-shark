@@ -141,11 +141,9 @@ export interface ScriptDocumentRepository {
 
 export class ScriptDocumentService {
     private repo: ScriptDocumentRepository;
-    public owner: string;
 
-    constructor(repo: ScriptDocumentRepository, owner: string) {
+    constructor(repo: ScriptDocumentRepository) {
         this.repo = repo;
-        this.owner = owner;
     }
 
     async newDocument(name: string): Promise<ScriptDocument> {

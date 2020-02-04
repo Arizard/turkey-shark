@@ -3,8 +3,6 @@ import { FocusStyleManager } from "@blueprintjs/core";
 
 import MainPresenter from "./MainPresenter";
 import firebase from "firebase";
-import FirebasePersistenceService
-    from "../../services/FirebasePersistenceService";
 
 FocusStyleManager.onlyShowFocusOnTabs();
 
@@ -37,7 +35,6 @@ const firebaseConfig = {
 };
 
 let fb = firebase.initializeApp(firebaseConfig);
-let persistenceService = new FirebasePersistenceService(firebase.firestore(fb));
 
 class MainController extends PureComponent<Props, State> {
     constructor(props: Props) {
@@ -69,7 +66,6 @@ class MainController extends PureComponent<Props, State> {
                 user.getIdToken(true).then((idToken) => {
                     console.log(idToken);
                     this.setState({token: idToken})
-                    persistenceService.setUser(idToken);
                 }).catch(function (error) {
                     console.error("Could not get the ID Token.");
                     console.error(error)
@@ -107,7 +103,6 @@ class MainController extends PureComponent<Props, State> {
     render() {
         return (
             <MainPresenter
-                persistenceService={persistenceService}
                 authLoading={this.state.authLoading}
                 startAuth={this.startAuth}
                 logOut={this.logOut}
