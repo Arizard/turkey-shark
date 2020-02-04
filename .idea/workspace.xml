@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7898b2e2-cf0f-41d4-b636-c8dc7da93a21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/usecases/NewScriptDocument.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usecases/NewScriptDocument.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usecases/UseCase.ts" afterDir="false" />
+    <list default="true" id="7898b2e2-cf0f-41d4-b636-c8dc7da93a21" name="Default Changelist" comment="fix some linting and code style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainController.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/MainController.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/MainPresenter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/MainPresenter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/ScriptDocument/ScriptDocument.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TestPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/TestPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/FirebasePersistenceService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/PersistenceService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usecases/NewScriptDocument.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/NewScriptDocument.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580352279624</updated>
       <workItem from="1580352281232" duration="14038000" />
-      <workItem from="1580429375362" duration="21175000" />
+      <workItem from="1580429375362" duration="21312000" />
     </task>
     <task id="LOCAL-00001" summary="Set up some routing">
       <created>1580357272925</created>
@@ -174,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580782081726</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="more tests, more promises">
+      <created>1580795493574</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580795493574</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +195,9 @@
     <MESSAGE value="persistence service" />
     <MESSAGE value="add scriptdocument entity" />
     <MESSAGE value="promises and tests!" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises and tests!" />
+    <MESSAGE value="more tests, more promises" />
+    <MESSAGE value="fix some linting and code style" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some linting and code style" />
   </component>
   <component name="WindowStateProjectService">
     <state x="880" y="387" key="#Plugins" timestamp="1580429362000">
@@ -225,26 +221,26 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1018" y="475" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580792377174" />
-    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580782081593">
+    <state x="872" y="323" key="CommitChangelistDialog2" timestamp="1580795576094">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580782081593" />
-    <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580795479943">
+    <state x="872" y="323" key="CommitChangelistDialog2/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795576094" />
+    <state width="2539" height="423" key="GridCell.Tab.0.bottom" timestamp="1580795546912">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795479943" />
-    <state width="2539" height="423" key="GridCell.Tab.0.center" timestamp="1580795479941">
+    <state width="2539" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795546912" />
+    <state width="2539" height="423" key="GridCell.Tab.0.center" timestamp="1580795546910">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795479941" />
-    <state width="2539" height="423" key="GridCell.Tab.0.left" timestamp="1580795479939">
+    <state width="2539" height="423" key="GridCell.Tab.0.center/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795546909" />
+    <state width="2539" height="423" key="GridCell.Tab.0.left" timestamp="1580795546908">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795479939" />
-    <state width="2539" height="423" key="GridCell.Tab.0.right" timestamp="1580795479942">
+    <state width="2539" height="423" key="GridCell.Tab.0.left/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795546908" />
+    <state width="2539" height="423" key="GridCell.Tab.0.right" timestamp="1580795546911">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="423" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795479942" />
+    <state width="2539" height="423" key="GridCell.Tab.0.right/0.0.2560.1440/-1680.390.1680.1050@0.0.2560.1440" timestamp="1580795546911" />
     <state x="789" y="359" key="SettingsEditor" timestamp="1580779153765">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

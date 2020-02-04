@@ -1,9 +1,9 @@
 import {MemoryScriptDocumentRepository} from "./MemoryScriptDocumentRepository";
-import {ScriptDocument, ScriptDocumentService} from "./ScriptDocument";
+import {ScriptDocumentService} from "./ScriptDocument";
 
 test('ScriptDocumentService newDocument', async () => {
-    const prom = new Promise(
-        async (resolve, reject) => {
+    return new Promise(
+        async (resolve) => {
             const repo = new MemoryScriptDocumentRepository();
             const svc = new ScriptDocumentService(repo);
 
@@ -14,5 +14,4 @@ test('ScriptDocumentService newDocument', async () => {
             resolve();
         }
     );
-    return prom;
 });
