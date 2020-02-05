@@ -46,6 +46,7 @@ const MainPresenter: FunctionComponent<Props> = (props) => {
                             <LoginWithRedirect {...props}/>
                         </Route>
                         <Route exact path='/testpage'>
+                            <TestPage/>
                         </Route>
                     </Switch>
                 </div>
