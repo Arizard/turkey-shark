@@ -1,3 +1,9 @@
+# Turkey Shark
+
+This is ScriptEngine, but written in Typescript and with more abstractions and separation of concerns.
+
+The goal is to remake ScriptEngine but make it easier to add features and maintain.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
