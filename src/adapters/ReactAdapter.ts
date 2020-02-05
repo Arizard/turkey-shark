@@ -14,7 +14,7 @@ import {
 } from "../usecases/LoadScriptDocument";
 
 export class ReactAdapter implements UseCaseAdapter {
-    private repo: ScriptDocumentRepository;
+    private readonly repo: ScriptDocumentRepository;
 
     constructor(repo: ScriptDocumentRepository) {
         this.repo = repo;
